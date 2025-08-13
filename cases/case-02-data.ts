@@ -23,7 +23,7 @@ export const case02: Case = {
         {
             name: 'Tina Moore',
             description: "Florist",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_1.jpeg?alt=media',
+            img: '/images/Tina.png',
             bloodType: 'O+',
             shoeSize: 8,
             height: '5’6”',
@@ -36,7 +36,7 @@ export const case02: Case = {
         {
             name: 'Maria Lee',
             description: "Accountant",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_6.jpeg?alt=media',
+            img: '/images/Maria.png',
             bloodType: 'A+',
             shoeSize: 8,
             height: '5’4”',
@@ -49,7 +49,7 @@ export const case02: Case = {
         {
             name: 'Peter Chan',
             description: "Security Guard",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_3.jpeg?alt=media',
+            img: '/images/Peter.png',
             bloodType: 'B-',
             shoeSize: 9,
             height: '5’9”',
@@ -62,7 +62,7 @@ export const case02: Case = {
         {
             name: 'Grace Liu',
             description: "Gardener",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_8.jpeg?alt=media',
+            img: '/images/Grace.png',
             bloodType: 'O-',
             shoeSize: 6,
             height: '5’2”',
@@ -75,7 +75,7 @@ export const case02: Case = {
         {
             name: 'Mark Smith',
             description: "Jeweler / Museum Vendor",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_5.jpeg?alt=media',
+            img: '/images/Mark.png',
             bloodType: 'O+',
             shoeSize: 10,
             height: '5’11”',
@@ -88,7 +88,7 @@ export const case02: Case = {
         {
             name: 'Olivia Brooks',
             description: "Artist",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_4.jpeg?alt=media',
+            img: '/images/Olivia.png',
             bloodType: 'AB+',
             shoeSize: 8,
             height: '5’7”',
@@ -101,7 +101,7 @@ export const case02: Case = {
         {
             name: 'Adam Ross',
             description: "Lawyer",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_7.jpeg?alt=media',
+            img: '/images/Adam.png',
             bloodType: 'A-',
             shoeSize: 8,
             height: '5’10”',
@@ -114,7 +114,7 @@ export const case02: Case = {
         {
             name: 'Rachel Kim',
             description: "Photographer",
-            img: 'https://firebasestorage.googleapis.com/v0/b/genai-assets.appspot.com/o/images%2Fsuspect_2.jpeg?alt=media',
+            img: '/images/Rachel.png',
             bloodType: 'O+',
             shoeSize: 9,
             height: '5’8”',

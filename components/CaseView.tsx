@@ -15,6 +15,7 @@ import BloodTypeGame from './puzzles/BloodTypeGame';
 import CctvReconstructionGame from './puzzles/CctvReconstructionGame';
 import BallisticsV2MatchGame from './puzzles/BallisticsV2MatchGame';
 import FiberAnalysisV2Game from './puzzles/FiberAnalysisV2Game';
+import { getAssetPath } from '../lib/utils';
 
 type CaseViewTab = 'evidence' | 'suspects';
 
@@ -185,7 +186,7 @@ const CaseView: React.FC<CaseViewProps> = ({ caseData, onExit }) => {
                         key={suspect.name} 
                         className={`flex flex-col sm:flex-row items-start p-4 bg-slate-800 border border-slate-700 rounded-lg gap-4 transition-all duration-500 ${animating.has(suspect.name) ? 'animate-shrink-out' : ''}`}
                     >
-                        <img src={suspect.img} alt={suspect.name} className="w-full sm:w-32 h-48 sm:h-auto object-cover rounded-md border-2 border-slate-600 shrink-0" />
+                        <img src={getAssetPath(suspect.img)} alt={suspect.name} className="w-full sm:w-32 h-48 sm:h-auto object-cover rounded-md border-2 border-slate-600 shrink-0" />
                         <div className="flex-grow">
                             <h3 className="font-teko text-3xl text-slate-100">{suspect.name}</h3>
                             <p className="text-sm text-slate-400 mb-3 italic">"{suspect.connectionToScene || suspect.description}"</p>

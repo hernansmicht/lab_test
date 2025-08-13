@@ -9,9 +9,9 @@ export const murderAtDock17: Case = {
     locked: false,
     puzzleUnlockStrategy: 'all',
     suspects: [
-        { name: 'Marco Vance', description: 'Dockworker with a violent past.', img: 'https://picsum.photos/seed/marco/100/100' },
-        { name: 'Dana Cross', description: 'Local gang affiliate, owns a registered .45 ACP.', img: 'https://picsum.photos/seed/dana/100/100' },
-        { name: 'Liam Frost', description: 'Security guard on duty the night of the murder.', img: 'https://picsum.photos/seed/liam/100/100' }
+        { name: 'Marco Vance', description: 'Dockworker with a violent past.', img: '/images/Marco.png' },
+        { name: 'Dana Cross', description: 'Local gang affiliate, owns a registered .45 ACP.', img: '/images/Dana.png' },
+        { name: 'Liam Frost', description: 'Security guard on duty the night of the murder.', img: '/images/Liam.png' }
     ],
     puzzles: [
         { id: 'puz-01', name: 'DNA Match', puzzleType: 'DNA_MATCH', description: 'Align DNA fragments to identify owner.', img: 'https://picsum.photos/seed/glove/200/200', icon: DnaIcon, matchResult: 'Glove DNA Match: Marco Vance' },
