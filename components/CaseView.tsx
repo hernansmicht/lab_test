@@ -184,14 +184,16 @@ const CaseView: React.FC<CaseViewProps> = ({ caseData, onExit }) => {
                 .map(suspect => (
                     <div 
                         key={suspect.name} 
-                        className={`flex flex-col sm:flex-row items-start p-4 bg-slate-800 border border-slate-700 rounded-lg gap-4 transition-all duration-500 ${animating.has(suspect.name) ? 'animate-shrink-out' : ''}`}
+                        className={`flex items-start p-4 bg-slate-800 border border-slate-700 rounded-lg gap-6 transition-all duration-500 ${animating.has(suspect.name) ? 'animate-shrink-out' : ''}`}
                     >
-                        <img src={getAssetPath(suspect.img)} alt={suspect.name} className="w-full sm:w-32 h-48 sm:h-auto object-cover rounded-md border-2 border-slate-600 shrink-0" />
+                        <img src={getAssetPath(suspect.img)} alt={suspect.name} className="w-48 h-64 object-cover rounded-lg border-2 border-slate-600 shrink-0" />
                         <div className="flex-grow">
-                            <h3 className="font-teko text-3xl text-slate-100">{suspect.name}</h3>
-                            <p className="text-sm text-slate-400 mb-3 italic">"{suspect.connectionToScene || suspect.description}"</p>
+                            <div className="mb-4">
+                                <h3 className="font-teko text-4xl text-slate-100">{suspect.name}</h3>
+                                <p className="text-sm text-slate-400 italic">"{suspect.connectionToScene || suspect.description}"</p>
+                            </div>
                             
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2 text-sm">
+                            <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
                                 {suspect.height && <div><span className="font-bold text-slate-300">Height:</span> <span className="text-slate-400">{suspect.height}</span></div>}
                                 {suspect.weight && <div><span className="font-bold text-slate-300">Weight:</span> <span className="text-slate-400">{suspect.weight}</span></div>}
                                 {suspect.shoeSize && <div><span className="font-bold text-slate-300">Shoe Size:</span> <span className="text-slate-400">{suspect.shoeSize}</span></div>}
