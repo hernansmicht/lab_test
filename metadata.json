@@ -1,0 +1,5 @@
+{
+  "name": "Crime Lab Puzzle Game",
+  "description": "A vertical mobile detective game where you analyze evidence to solve complex cases. Process clues through a series of forensic puzzles, identify suspects, and bring criminals to justice.",
+  "requestFramePermissions": []
+}
